@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godzilla</title>
+    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="yoda">
+      <audio id="hover-audio" src="godzilla-atomic-breath-sound-effect-made-with-Voicemod (mp3cut.net) after.mp3" type="audio/mpeg" >hi</audio>
+      <!-- <audio src=""></audio> -->
+        <img class="logo" src="image/Poster.png" alt="" />
+        <img class="front-image" src="image/Godzilla-2.png" alt="yoda holding his lightsabre up, the glow highlighting an angry look on his face" />
+        <img class="bg-image"  src="image/godzilla-2.jpg" alt="yoda looking peaceful on dagobah" />
+      </div>
+      <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // const audio2=document.getElementById('');
+    const image = document.querySelector('.front-image');
+    const audio = document.getElementById('hover-audio');
+
+    image.addEventListener('mouseover', function() {
+        audio.play();
+    });
+
+    image.addEventListener('mouseout', function() {
+        audio.pause();
+        audio.currentTime = 0;
+
+    });
+});
+      </script>
+      
+      <!-- <span class="inspiration">Inspired by <a href="https://codepen.io/gayane-gasparyan/details/wvxewXO">this CodePen by Gayane Gasparyan</a></span>
+      <a class="yt" href="https://youtu.be/DCRcFf39SYo">
+        Watch the tutorial
+      </a> -->
+      <!-- <iframe src="https://scratch.mit.edu/projects/742896056/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
+
+</body>
+</html>
